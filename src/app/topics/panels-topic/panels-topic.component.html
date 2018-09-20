@@ -1,0 +1,70 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <div class="panel" [ngClass]="{ drawn: topicListing.options.drawn }">
+      <div class="panel-heading {{ topicListing.options.headingColor }}" *ngIf="topicListing.options.showHeader">
+        <h4>Panel Heading</h4>
+      </div>
+      <div class="panel-body {{ topicListing.options.bodyColor }}">
+        <p>The panels follow the same format as Bootstrap, in case that helps you.</p>
+      </div>
+      <div class="panel-footer {{ topicListing.options.footerColor }}" *ngIf="topicListing.options.showFooter">
+        You could stick a status bar down here. Or totals.
+      </div>
+    </div>
+  </div>
+
+  <div options>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.showHeader" (ngModelChange)="updateCode()" /> Show Heading
+      </label>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.showFooter" (ngModelChange)="updateCode()" /> Show Footer
+      </label>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.drawn" (ngModelChange)="updateCode()" /> Use Hand-Drawn Border
+      </label>
+    </span>
+    <span class="option-select">
+      <label for="panelHeaderColor">Header Color: </label>
+      <select id="panelHeaderColor" [(ngModel)]="topicListing.options.headingColor" (ngModelChange)="updateCode()">
+        <option *ngFor="let color of colors" [value]='color'>{{ color }}</option>
+      </select>
+    </span>
+    <span class="option-select">
+      <label for="panelFooterColor">Footer Color: </label>
+      <select id="panelFooterColor" [(ngModel)]="topicListing.options.footerColor" (ngModelChange)="updateCode()">
+        <option *ngFor="let color of colors" [value]='color'>{{ color }}</option>
+      </select>
+    </span>
+  </div>
+
+  <div code-sample>
+      <pre>
+        <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+      </pre>
+      <hr>
+      {{ this.topicListing.options | json }}
+  </div>
+
+  <div usage>
+      <ul>
+        <li>
+          Use panels whenever you need a box.
+        </li>
+        <li>
+          The HTML for panels is the same as Bootstrap.
+        </li>
+        <li>
+          The color options are CSS classes based on a subset of CSS color keywords. You can use them on anything with a background color.
+        </li>
+        <li>
+          Use the class drawn on the .panel for the hand-drawn borders. You can use this class on other elements as well.
+        </li>
+      </ul>
+  </div>
+</sg-topic>

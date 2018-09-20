@@ -1,0 +1,10 @@
+.tooltip {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid slategrey;
+    box-shadow: 1px 1px 2px slategrey;
+    margin: 0.5rem;
+    max-width: 25rem;
+    padding: 0.25rem;
+    position: absolute;
+    z-index: 10000;
+}

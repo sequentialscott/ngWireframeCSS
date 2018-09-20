@@ -1,0 +1,25 @@
+<div class="styleguide-topic panel drawn">
+  <div class="topic-title panel-heading">
+    <h3>{{ topicListing.title }}</h3>
+  </div>
+
+  <div class="panel-body">
+    <div class="topic-options">
+      <ng-content select="[options]"></ng-content>
+    </div>
+
+    <div class="topic-example">
+      <h4>Example</h4>
+      <ng-content select="[example]"></ng-content>
+    </div>
+
+    <div class="topic-usage">
+      <h4>Usage</h4>
+      <ng-content select="[usage]"></ng-content>
+    </div>
+
+    <div class="topic-code-sample">
+      <ng-content select="[code-sample]"></ng-content>
+    </div>
+  </div>
+</div>

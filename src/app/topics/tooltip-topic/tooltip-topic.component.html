@@ -1,0 +1,38 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+      <p>Hover over the <strong><span sgTooltipTrigger="sampleTip">bold words</span></strong> to see a tooltip.</p>
+      <sg-tooltip tooltipId="sampleTip">
+          <p>Any HTML can go in here.  Any HTML element can trigger a tooltip.</p>
+          <hr>
+          <p>Yep, multiple elements even.  It's only 25rem wide, though.</p>
+      </sg-tooltip>
+  </div>
+
+  <div options>
+      <span *ngFor="let option of topicListing.options.triggerOptions" class="option-radio">
+        <label>
+          <input type="radio" name="tooltipTrigger" [value]="option" [(ngModel)]="topicListing.options.trigger" /> {{ option }}
+        </label>
+      </span>
+      <span class="fieldHelp">(Note: Code sample will update, but behavior on this page will not.)</span>
+  </div>
+
+  <div code-sample>
+      Code example here.
+  </div>
+
+  <div usage>
+      <ul>
+        <li>
+          The default trigger event is a hover, but you can make it work based on a click by adding <code>trigger="click"</code> to the 
+          <code>sgTooltipTrigger</code> directive.
+        </li>
+        <li>
+          The tooltip component does not provide any styling - take care of that separately if needed.
+        </li>
+        <li>
+          Any HTML element can be a tooltip trigger.  The tooltip content can be anywhere on the page.
+        </li>
+      </ul>
+  </div>
+</sg-topic>

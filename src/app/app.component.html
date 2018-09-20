@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<sg-collapse>
+  <div collapse-header>
+    <h3>Section Title</h3>
+  </div>
+  <div>
+    <p class="note">... and <span sgTooltipTrigger="testTooltip">whatever should be collapsed</span> goes here.</p>
+  </div>
+</sg-collapse>
+
+<sg-tooltip tooltipId="testTooltip" text="Hahahahah">
+  The projected tooltip text should appear here.
+</sg-tooltip>
+
+<hr>
+
+<sg-panels-topic [topicListing]="styleGuide.topics.panels"></sg-panels-topic>
+
+<sg-text-styles-topic [topicListing]="styleGuide.topics['text-styles']"></sg-text-styles-topic>
+
+<sg-tooltip-topic [topicListing]="styleGuide.topics.tooltip"></sg-tooltip-topic>

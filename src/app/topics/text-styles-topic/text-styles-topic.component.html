@@ -1,0 +1,34 @@
+<sg-topic [topicListing]="topicListing">
+    <div example>
+        <p class="note" [class.compact]="topicListing.options.compact">This is a Note.</p>
+        <p class="instructions" [class.compact]="topicListing.options.compact">These are instructions.</p>
+        <p>
+          <span class="fieldHelp" [class.compact]="topicListing.options.compact">This is some field-level help.</span>
+        </p>
+        <p>
+          <span class="currentStatus" [class.compact]="topicListing.options.compact">
+            This is the current status.
+          </span>
+        </p>
+    </div>
+  
+    <div options>
+      <span class="option-checkbox">
+        <label>
+          <input type="checkbox" [(ngModel)]="topicListing.options.compact" /> Compact
+        </label>
+      </span>
+    </div>
+  
+    <div code-sample>
+        Code example here.
+    </div>
+  
+    <div usage>
+        <ul>
+          <li>
+            Don't just pick one that looks right, make sure the name makes semantic sense.
+          </li>
+        </ul>
+    </div>
+  </sg-topic>

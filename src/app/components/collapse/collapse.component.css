@@ -1,0 +1,26 @@
+.wf-collapse-header {
+    align-items: stretch;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    min-height: 40px;
+}
+
+.collapse-header-indicator {
+    background-repeat: no-repeat;
+    flex: 0 1 40px;
+    margin: 0 1rem 0 0;
+}
+    .wf-collapse.collapsed .collapse-header-indicator {
+        background-image: url('/assets/wf-sprite.png');
+        background-position: -200px center;
+    }
+    .wf-collapse.expanded .collapse-header-indicator {
+        background-image: url('/assets/wf-sprite.png');
+        background-position: -640px center;
+    }
+
+.collapse-header-content {
+    flex: 0 1 auto;
+}

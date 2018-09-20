@@ -1,0 +1,34 @@
+.styleguide-topic .panel-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 2rem 0;
+}
+
+.styleguide-topic > div {
+    margin: 0;
+    padding: 0rem;
+}
+
+.styleguide-topic .topic-title, .styleguide-topic .topic-options, .styleguide-topic .topic-code-sample {
+    flex: 0 1 100%;
+}
+
+.styleguide-topic .topic-example {
+    flex: 1 1 65%;
+}
+
+.styleguide-topic .topic-usage {
+    flex: 1 1 33%;
+    padding: 0.5rem 0.25rem 0.5rem 1rem;
+}
+
+.styleguide-topic .topic-options {
+    background-color: lightgrey;
+    padding: 0.5rem;
+}
+
+h4 {
+    margin-top: 0;
+}
