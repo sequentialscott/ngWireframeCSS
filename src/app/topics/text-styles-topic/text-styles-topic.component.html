@@ -15,13 +15,15 @@
     <div options>
       <span class="option-checkbox">
         <label>
-          <input type="checkbox" [(ngModel)]="topicListing.options.compact" /> Compact
+          <input type="checkbox" [(ngModel)]="topicListing.options.compact" (ngModelChange)="updateCode()" /> Compact
         </label>
       </span>
     </div>
   
     <div code-sample>
-        Code example here.
+      <pre>
+        <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+      </pre>
     </div>
   
     <div usage>

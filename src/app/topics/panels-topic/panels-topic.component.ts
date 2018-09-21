@@ -30,11 +30,11 @@ export class PanelsTopicComponent implements OnInit {
 
       this.code = `
 <div class="panel${ this.topicListing.options.drawn ? ' drawn' : '' }>
-  ${ this.topicListing.options.showHeader ? this.snippets.header : '' }
+  ${ this.topicListing.options.showHeader ? this.snippets.header : '<!-- No heading -->' }
   <div class="panel-body ${ this.topicListing.options.bodyColor }">
     <p>The panels follow the same format as Bootstrap, in case that helps you.</p>
   </div>
-  ${ this.topicListing.options.showFooter ? this.snippets.footer : '' }
+  ${ this.topicListing.options.showFooter ? this.snippets.footer : '<!-- No Footer -->' }
 </div>
       `;
     }
