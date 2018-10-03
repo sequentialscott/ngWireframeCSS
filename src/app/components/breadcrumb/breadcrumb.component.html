@@ -1,0 +1,6 @@
+<div class="compact">
+  <span *ngFor="let link of links; let isLast = last"> <!--  -->
+    <a [href]="link.link">{{ link.label }}</a> 
+    <span class="separator" *ngIf="!isLast">»</span>   
+  </span>
+</div>

@@ -13,6 +13,12 @@ export interface Listing {
 })
 export class StyleGuideService {
   topics = {
+    'breadcrumbs': {
+      id: 'breadcrumb',
+      title: 'Breadcrumbs',
+      type: ['widget'],
+      options: {}
+    },
     'panels': {
       id: 'panels',
       title: 'Panels',

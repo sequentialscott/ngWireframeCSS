@@ -12,6 +12,8 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { TooltipTopicComponent } from './topics/tooltip-topic/tooltip-topic.component';
 import { TextStylesTopicComponent } from './topics/text-styles-topic/text-styles-topic.component';
 import { PanelsTopicComponent } from './topics/panels-topic/panels-topic.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { BreadcrumbsTopicComponent } from './topics/breadcrumbs-topic/breadcrumbs-topic.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PanelsTopicComponent } from './topics/panels-topic/panels-topic.compone
     TooltipComponent,
     TooltipTopicComponent,
     TextStylesTopicComponent,
-    PanelsTopicComponent
+    PanelsTopicComponent,
+    BreadcrumbComponent,
+    BreadcrumbsTopicComponent
   ],
   imports: [
     BrowserModule,
