@@ -29,6 +29,7 @@ export class TooltipDirective implements OnInit {
     event.stopPropagation();
     if (this.tts.tips[this.sgTooltipTrigger]) {
       this.tts.tips[this.sgTooltipTrigger].show(event.clientX, event.clientY);
+      console.log(`X: ${event.clientX}, Y: ${event.clientY}`);
     } else {
       console.log('There is not a matching tooltip to the id: ' + this.sgTooltipTrigger);
     }
