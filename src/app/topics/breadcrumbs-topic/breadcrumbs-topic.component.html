@@ -4,24 +4,23 @@
   </div>
 
   <div options>
-    <!-- <span class="option-checkbox">
-      <label>
-        <input type="checkbox" [(ngModel)]="topicListing.options.compact" (ngModelChange)="updateCode()" /> Compact
-      </label>
-    </span> -->
+    <!-- No options -->
+    <span class="compact">No options available for breadcrumbs widget.</span>
   </div>
 
   <div code-sample>
-    <!-- <pre>
+    <pre>
       <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
-    </pre> -->
+    </pre>
   </div>
 
   <div usage>
       <ul>
-        <li>
-          Breadcrumbs can be <em>structural</em> or <em>historical</em>.
-        </li>
+        <li>Breadcrumbs can be <em>structural</em> or <em>historical</em>. Don't use both in the same site.</li>
+        <li>Structural breadcrumbs show where you are in a hierarchy.</li>
+        <li>Historical breadcrumbs show the path you took when navigating to the page.</li>
+        <li>The current page (last one in the object passed in with via the links attribute) does not have a link.</li>
+        <li>If an item in the linkset list doesn't have a link target, it will receive an href of "#", the current page.</li>
       </ul>
   </div>
 </sg-topic>
