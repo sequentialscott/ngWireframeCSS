@@ -19,6 +19,14 @@ export class StyleGuideService {
       type: ['widget'],
       options: {}
     },
+    'icons': {
+      id: 'icons',
+      title: 'Icons',
+      type: ['widget', 'convention'],
+      options: {
+        compact: false
+      }
+    },
     'panels': {
       id: 'panels',
       title: 'Panels',
@@ -105,5 +113,29 @@ export class StyleGuideService {
     'wheat',
     'white',
     'whitesmoke'];
+
+  icons: string[] = [
+    'add',
+    'arrowdown',
+    'arrowright',
+    'arrow',
+    'attachment',
+    'closed',
+    'document',
+    'doubledown',
+    'doubleright',
+    'download',
+    'edit',
+    'ellipsis',
+     'error',
+     'info',
+     'minus',
+     'ok',
+     'open',
+     'options',
+     'plus',
+     'reload',
+     'upload',
+     'warning'];
   constructor() { }
 }

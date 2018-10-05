@@ -1,0 +1,33 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <div class="icon-set">
+      <div *ngFor="let iconName of iconSet">
+        <span class="icon {{ iconName }}" [class.compact]="topicListing.options.compact"></span>
+        <div>
+          {{ iconName }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div options>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.compact" (ngModelChange)="updateCode()" /> Compact
+      </label>
+    </span>
+</div>
+
+  <div code-sample>
+    <pre>
+      <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+    </pre>
+  </div>
+
+  <div usage>
+      <ul>
+        <li>Example shown is for the first icon only (add).  Substitute the icon name to get the other ones.</li>
+        <li>These are hand-drawon icons in a single graphic (sprite).</li>
+      </ul>
+  </div>
+</sg-topic>

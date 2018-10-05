@@ -1,0 +1,10 @@
+.icon-set {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.icon-set > div {
+    margin: 1rem;
+    text-align: center;
+}

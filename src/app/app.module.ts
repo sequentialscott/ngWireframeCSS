@@ -14,6 +14,7 @@ import { TextStylesTopicComponent } from './topics/text-styles-topic/text-styles
 import { PanelsTopicComponent } from './topics/panels-topic/panels-topic.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { BreadcrumbsTopicComponent } from './topics/breadcrumbs-topic/breadcrumbs-topic.component';
+import { IconsTopicComponent } from './topics/icons-topic/icons-topic.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BreadcrumbsTopicComponent } from './topics/breadcrumbs-topic/breadcrumb
     TextStylesTopicComponent,
     PanelsTopicComponent,
     BreadcrumbComponent,
-    BreadcrumbsTopicComponent
+    BreadcrumbsTopicComponent,
+    IconsTopicComponent
   ],
   imports: [
     BrowserModule,
