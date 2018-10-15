@@ -1,0 +1,7 @@
+<ul class="link-list columns-{{columns}}" *ngIf="links.length > 0">
+  <li *ngFor="let link of links">
+    <a [href]="link.url">
+      {{ link.text }}
+    </a>
+  </li>
+</ul>

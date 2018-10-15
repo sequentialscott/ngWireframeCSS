@@ -1,0 +1,19 @@
+.link-list {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.columns-2 {
+    columns: 2;
+    column-width: 10rem;
+}
+.columns-3 {
+    columns: 3;
+    column-width: 10rem;
+}
+.columns-4 {
+    columns: 4;
+    column-width: 10rem;
+}

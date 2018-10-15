@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    ngWireframe Style Guide
   </h1>
 </div>
 <sg-collapse>
@@ -17,6 +17,10 @@
   The projected tooltip text should appear here.
 </sg-tooltip>
 
+<hr>
+<div>
+  <sg-link-list columns="4" [links]="tocList"></sg-link-list>
+</div>
 <hr>
 
 <sg-breadcrumbs-topic [topicListing]="styleGuide.topics.breadcrumbs"></sg-breadcrumbs-topic>
