@@ -27,6 +27,16 @@ export class StyleGuideService {
         compact: false
       }
     },
+    'linkLists': {
+      id: 'link-list',
+      title: 'Link Lists',
+      type: ['convention'],
+      options: {
+        columns: 2,
+        columnOptions: [1, 2, 3, 4],
+        compact: false
+      }
+    },
     'panels': {
       id: 'panels',
       title: 'Panels',

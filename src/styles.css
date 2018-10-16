@@ -241,6 +241,7 @@ STRONG {
 }
 UL {
 	list-style-image: url('./assets/bullet.png');
+	padding-left: 1rem;
 }
 .compact {
 	font-size: 0.88rem;
@@ -734,4 +735,25 @@ DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
 /* New Dev for Angular 2+ */
 .option-radio, .option-checkbox, .option-select {
 	margin-right: 1.5rem;
+}
+
+/* ------------------- LINK LISTS --------------- */
+.link-list {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.columns-2 {
+    columns: 2;
+    column-width: 10rem;
+}
+.columns-3 {
+    columns: 3;
+    column-width: 10rem;
+}
+.columns-4 {
+    columns: 4;
+    column-width: 10rem;
 }

@@ -1,0 +1,37 @@
+<sg-topic [topicListing]="topicListing">
+    <div example>
+      <sg-link-list [links]="linkList" [columns]="topicListing.options.columns"></sg-link-list>
+    </div>
+  
+    <div options>
+        <label>
+            Columns: 
+            <select [(ngModel)]="topicListing.options.columns" (ngModelChange)="updateCode()">
+                <option *ngFor="let numberColumns of topicListing.options.columnOptions" [value]="numberColumns">
+                    {{ numberColumns }}
+                </option>
+            </select>
+        </label>
+    </div>
+  
+    <div code-sample>
+        <pre>
+            <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+        </pre>
+    </div>
+  
+    <div usage>
+        <ul>
+          <li>
+            You can use the class <em>link-list</em> on a <code>UL</code> element to get a single column list.
+          </li>
+          <li>
+            The CSS supports up to four columns if you add the class <em>columns-n</em>, where n is the number of columns.
+          </li>
+          <li>
+            You can also use the <code>sg-link-list</code> component, supplying it an array of objects with 
+            <code>{{ '{' }}text: 'Link text', url: 'url text' {{ '}' }}</code>.  There is also an optional <em>columns</em> attribute.
+          </li>
+        </ul>
+    </div>
+  </sg-topic>

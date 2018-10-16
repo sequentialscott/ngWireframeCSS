@@ -16,6 +16,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { BreadcrumbsTopicComponent } from './topics/breadcrumbs-topic/breadcrumbs-topic.component';
 import { IconsTopicComponent } from './topics/icons-topic/icons-topic.component';
 import { LinkListComponent } from './components/link-list/link-list.component';
+import { LinkListTopicComponent } from './topics/link-list-topic/link-list-topic.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LinkListComponent } from './components/link-list/link-list.component';
     BreadcrumbComponent,
     BreadcrumbsTopicComponent,
     IconsTopicComponent,
-    LinkListComponent
+    LinkListComponent,
+    LinkListTopicComponent
   ],
   imports: [
     BrowserModule,
