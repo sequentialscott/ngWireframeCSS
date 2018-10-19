@@ -1,0 +1,55 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <sg-message [message]="topicListing.options.messageConfig">
+      This isn't Lorem Ipsum text, but it means the same thing. The longer it is, 
+      the less it means, until it actually starts subtracting from the sum total of 
+      knowledge in the universe. Oops.
+    </sg-message>
+  </div>
+
+  <div options>
+    <span class="option-select">
+      <label for="messageType">Type of Message: </label>
+      <select id="messageType" [(ngModel)]="topicListing.options.messageConfig.messageType" (ngModelChange)="updateCode()">
+        <option *ngFor="let type of topicListing.options.messageTypeOptions" [value]='type'>
+          {{ type }}
+        </option>
+      </select>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.messageConfig.dismissable" (ngModelChange)="updateCode()" /> Dismissable
+      </label>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.messageConfig.visible" (ngModelChange)="updateCode()" /> Visible
+      </label>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.messageConfig.compact" (ngModelChange)="updateCode()" /> Compact
+      </label>
+    </span>
+  </div>
+
+  <div code-sample>
+      <pre>
+        <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+      </pre>
+  </div>
+
+  <div usage>
+      <ul>
+        <li>
+          Speak the user's language. Address him/her directly and use the word "you" if appropriate.
+        </li>
+        <li>
+          Be sure grammar and spelling are correct.
+        </li>
+        <li>
+          Place messages as close as possible to the object on the screen they apply to.
+        </li>
+      </ul>
+  </div>
+</sg-topic>

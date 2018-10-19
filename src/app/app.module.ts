@@ -17,6 +17,8 @@ import { BreadcrumbsTopicComponent } from './topics/breadcrumbs-topic/breadcrumb
 import { IconsTopicComponent } from './topics/icons-topic/icons-topic.component';
 import { LinkListComponent } from './components/link-list/link-list.component';
 import { LinkListTopicComponent } from './topics/link-list-topic/link-list-topic.component';
+import { MessageComponent } from './components/message/message.component';
+import { UserMessageTopicComponent } from './topics/user-message-topic/user-message-topic.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { LinkListTopicComponent } from './topics/link-list-topic/link-list-topic
     BreadcrumbsTopicComponent,
     IconsTopicComponent,
     LinkListComponent,
-    LinkListTopicComponent
+    LinkListTopicComponent,
+    MessageComponent,
+    UserMessageTopicComponent
   ],
   imports: [
     BrowserModule,

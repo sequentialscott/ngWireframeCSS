@@ -3,8 +3,6 @@ import { HighlightResult } from 'ngx-highlightjs';
 
 import { Link } from '../../components/link-list/link-list.component';
 import { listener } from '@angular/core/src/render3/instructions';
-// import { StyleGuideService } from '../../style-guide.service';
-
 
 @Component({
   selector: 'sg-link-list-topic',

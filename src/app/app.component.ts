@@ -13,13 +13,6 @@ export class AppComponent implements OnInit {
   title = 'this Style Guide';
   response: HighlightResult;
   tocList: Link[] = [];
-  testCode = `
-  <div>
-     <span>
-        barfoo
-      </span>
-  </div>
-  `;
 
   constructor (private styleGuide: StyleGuideService) {
   }

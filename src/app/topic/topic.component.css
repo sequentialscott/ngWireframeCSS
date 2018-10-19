@@ -22,12 +22,12 @@
 
 .styleguide-topic .topic-example {
     flex: 1 1 60%;
-    /* padding: 0.5rem 2rem 0.5rem 0.5rem; */
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
 }
 
 .styleguide-topic .topic-usage {
     flex: 1 1 33%;
-    /* padding: 0.5rem 0.25rem 0.5rem 1rem; */
+    padding: 0.5rem 0.25rem 0.5rem 1rem;
 }
 
 .styleguide-topic .topic-options {

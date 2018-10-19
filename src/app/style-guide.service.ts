@@ -74,12 +74,14 @@ export class StyleGuideService {
       title: 'User Messages',
       type: ['convention', 'widget'],
       options: {
-        messageType: 'Success',
-        messageTypeOptions: [ 'Success', 'Error', 'Warning', 'Info', 'No Data', 'Loading' ],
-        dismissable: true,
-        callback: false,
-        compact: false,
-        visible: true
+        messageConfig: {
+          messageType: 'success',
+          dismissable: true,
+          callback: function() { alert('A callback function just fired.  Boom!'); },
+          compact: false,
+          visible: true
+        },
+        messageTypeOptions: [ 'success', 'error', 'warning', 'info', 'no-data', 'loading' ],
       }
     }
   };

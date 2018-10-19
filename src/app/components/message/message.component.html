@@ -1,0 +1,11 @@
+<p class="message {{ message.messageType }}" [class.compact]="message.compact" *ngIf="message.visible">
+  <span class="icon" [ngClass]="{
+    ok: message.messageType === 'success',
+    error: message.messageType === 'error',
+    warning: message.messageType === 'warning',
+    ellipsis: message.messageType === 'no-data',
+    info: message.messageType === 'info',
+    compact: message.compact }"></span>
+  <ng-content></ng-content>
+  <span class="closeIcon iconX secondary compact" *ngIf="message.dismissable" (click)="dismiss()"></span>
+</p>
