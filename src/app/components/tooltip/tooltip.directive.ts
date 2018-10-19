@@ -30,7 +30,6 @@ export class TooltipDirective implements OnInit {
     const YwithScroll = event.clientY + document.documentElement.scrollTop;
     if (this.tts.tips[this.sgTooltipTrigger]) {
       this.tts.tips[this.sgTooltipTrigger].show(event.clientX, YwithScroll);
-      console.log(`X: ${event.clientX}, Y: ${YwithScroll}`);
     } else {
       console.log('There is not a matching tooltip to the id: ' + this.sgTooltipTrigger);
     }
