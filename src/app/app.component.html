@@ -4,18 +4,6 @@
     ngWireframe Style Guide
   </h1>
 </div>
-<sg-collapse>
-  <div collapse-header>
-    <h3>Section Title</h3>
-  </div>
-  <div>
-    <p class="note">... and <span sgTooltipTrigger="testTooltip">whatever should be collapsed</span> goes here.</p>
-  </div>
-</sg-collapse>
-
-<sg-tooltip tooltipId="testTooltip" text="Hahahahah">
-  The projected tooltip text should appear here.
-</sg-tooltip>
 <hr>
 <div>
   <sg-link-list columns="4" [links]="tocList"></sg-link-list>
@@ -23,6 +11,8 @@
 <hr>
 
 <sg-breadcrumbs-topic [topicListing]="styleGuide.topics.breadcrumbs"></sg-breadcrumbs-topic>
+
+<sg-collapse-topic [topicListing]="styleGuide.topics.collapse"></sg-collapse-topic>
 
 <sg-icons-topic [topicListing]="styleGuide.topics.icons"></sg-icons-topic>
 

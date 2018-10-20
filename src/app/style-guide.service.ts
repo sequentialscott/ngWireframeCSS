@@ -19,6 +19,12 @@ export class StyleGuideService {
       type: ['widget'],
       options: {}
     },
+    'collapse': {
+      id: 'collapse',
+      title: 'Collapse',
+      type: ['widget', 'layout'],
+      options: {}
+    },
     'icons': {
       id: 'icons',
       title: 'Icons',

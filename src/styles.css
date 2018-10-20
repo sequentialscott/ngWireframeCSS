@@ -3,7 +3,7 @@
 @import url('http://fonts.googleapis.com/css?family=Architects+Daughter|Averia+Gruesa+Libre');
 
 /* Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -17,8 +17,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -29,7 +29,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -61,7 +61,7 @@ body {
 	padding: 1rem;
 }
 
-/* Navigation 
+/* Navigation
 .close {
 	background-color: white;
 	color: #008CBA;
@@ -201,7 +201,7 @@ UL.radio-list LI {
 
 /* ------------------- TEXT STYLES --------------------------- */
 H1, H2, H3, H4, H5, H6 {
-	letter-spacing: 1px; 
+	letter-spacing: 1px;
 	margin: 2rem 0 0.5rem;
 }
 H1 { font-size: 2rem; font-weight: bold; margin:0.5rem 0 2rem;}
@@ -612,7 +612,7 @@ SPAN.collapse-toggle {
 DIV.collapse-area {
 	margin-left: 2rem;
 }
-DIV.collapse-area > SPAN > H1, DIV.collapse-area > SPAN > H2, 
+DIV.collapse-area > SPAN > H1, DIV.collapse-area > SPAN > H2,
 DIV.collapse-area > SPAN > H3, DIV.collapse-area > SPAN > H4,
 DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
 	cursor: pointer;
@@ -628,7 +628,7 @@ DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
 .wf-collapse-header h4,
 .wf-collapse-header h5,
 .wf-collapse-header h6 {
-    margin: 20px 0;
+    margin: 0.25em 0 20px 0;
 }
 
 
@@ -651,7 +651,7 @@ DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
   height: 100%;
   margin: 2px;
   width: 6px;
-  
+
   -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
   animation: stretchdelay 1.2s infinite ease-in-out;
 }
@@ -677,15 +677,15 @@ DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
 }
 
 @-webkit-keyframes stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
   20% { -webkit-transform: scaleY(1.0) }
 }
 
 @keyframes stretchdelay {
-  0%, 40%, 100% { 
+  0%, 40%, 100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-  }  20% { 
+  }  20% {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }

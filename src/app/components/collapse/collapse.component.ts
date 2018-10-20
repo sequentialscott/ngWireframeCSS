@@ -1,21 +1,31 @@
-import { Component, Attribute } from '@angular/core';
+import { Component, Attribute, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sg-collapse',
   templateUrl: './collapse.component.html',
   styleUrls: ['./collapse.component.css']
 })
-export class CollapseComponent {
+export class CollapseComponent implements OnInit {
   closed = false;
+  compactArrow = false;
+  attrCollapsed: string;
+  attrCompact: string;
 
-  constructor( @Attribute('collapsed') collapsed: string) {
-    if (collapsed === '' || collapsed === 'true') {
-      console.log('Collapsed attribute indicated it should be collapsed by default.');
+  constructor( @Attribute('collapsed') collapsed: string, @Attribute('compact') compact: string) {
+    this.attrCollapsed = collapsed;
+    this.attrCompact = compact;
+  }
+
+  ngOnInit() {
+    if (this.attrCollapsed === '' || this.attrCollapsed === 'true') {
       this.closed = true;
+    }
+    if (this.attrCompact === '' || this.attrCompact === 'true') {
+      this.compactArrow = true;
     }
   }
 
-  toggle() {
-    this.closed = !this.closed;
-  }
+  toggle(): void {
+  this.closed = !this.closed;
+}
 }

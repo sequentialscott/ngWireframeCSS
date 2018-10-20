@@ -1,0 +1,38 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <sg-collapse>
+      <div collapse-header>
+        <h3>This is the Title to Click...</h3>
+      </div>
+      <div>
+        <p>... and whatever should be collapsed goes here. You can nest collapsible sections within one another.</p>
+        <sg-collapse collapsed compact>
+          <div collapse-header>
+            <h5>Look! A Subheading!</h5>
+          </div>
+          <div>
+            <p>With its very own subheading content.</p>
+          </div>
+        </sg-collapse>
+      </div>
+    </sg-collapse>
+  </div>
+
+  <div options>
+    <!-- No options -->
+    <span class="compact">No options available for collapse widget.</span>
+  </div>
+
+  <div code-sample>
+    <pre>
+      <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+    </pre>
+  </div>
+
+  <div usage>
+    <ul>
+      <li>You can put any HTML in the <code>&lt;div collapse-header&gt;</code>.</li>
+      <li>You can also nest them by using <code>&lt;sg-collapse&gt</code>; in the second <code>&lt;div&gt;</code>, if that's a good idea.</li>
+    </ul>
+  </div>
+</sg-topic>

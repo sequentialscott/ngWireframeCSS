@@ -12,14 +12,26 @@
     flex: 0 1 40px;
     margin: 0 1rem 0 0;
 }
-    .wf-collapse.collapsed .collapse-header-indicator {
-        background-image: url('/assets/wf-sprite.png');
-        background-position: -200px center;
-    }
-    .wf-collapse.expanded .collapse-header-indicator {
-        background-image: url('/assets/wf-sprite.png');
-        background-position: -640px center;
-    }
+.collapse-header-indicator.compact {
+    flex: 0 1 20px;
+}
+
+.wf-collapse.collapsed > .wf-collapse-header > .collapse-header-indicator {
+    background-image: url('/assets/wf-sprite.png');
+    background-position: -200px center;
+}
+.wf-collapse.collapsed > .wf-collapse-header > .collapse-header-indicator.compact {
+    background-position: -100px 0;
+    background-size: 440px 20px;
+}
+.wf-collapse.expanded > .wf-collapse-header > .collapse-header-indicator {
+    background-image: url('/assets/wf-sprite.png');
+    background-position: -640px center;
+}
+.wf-collapse.expanded > .wf-collapse-header > .collapse-header-indicator.compact {
+    background-position: -320px 0;
+    background-size: 440px 20px;
+}
 
 .collapse-header-content {
     flex: 0 1 auto;

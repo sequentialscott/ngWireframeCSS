@@ -19,6 +19,7 @@ import { LinkListComponent } from './components/link-list/link-list.component';
 import { LinkListTopicComponent } from './topics/link-list-topic/link-list-topic.component';
 import { MessageComponent } from './components/message/message.component';
 import { UserMessageTopicComponent } from './topics/user-message-topic/user-message-topic.component';
+import { CollapseTopicComponent } from './topics/collapse-topic/collapse-topic.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { UserMessageTopicComponent } from './topics/user-message-topic/user-mess
     LinkListComponent,
     LinkListTopicComponent,
     MessageComponent,
-    UserMessageTopicComponent
+    UserMessageTopicComponent,
+    CollapseTopicComponent
   ],
   imports: [
     BrowserModule,

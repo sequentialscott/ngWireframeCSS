@@ -1,6 +1,6 @@
 <div class="wf-collapse" [ngClass]="{expanded: !closed, collapsed: closed}">
   <div class="wf-collapse-header" (click)="toggle()">
-    <div class="collapse-header-indicator"></div>
+    <div class="collapse-header-indicator" [class.compact]="compactArrow"></div>
     <div class="collapse-header-content">
       <ng-content select="[collapse-header]"></ng-content>
     </div>
