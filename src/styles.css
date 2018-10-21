@@ -741,6 +741,10 @@ DIV.collapse-area > SPAN > H5, DIV.collapse-area > SPAN > H6 {
 	margin-right: 1.5rem;
 }
 
+.topic-usage li {
+  margin-bottom: 0.5rem;
+}
+
 /* ------------------- LINK LISTS --------------- */
 .link-list {
     list-style-type: none;

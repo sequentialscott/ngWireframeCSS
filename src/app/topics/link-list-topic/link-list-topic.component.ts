@@ -2,7 +2,6 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HighlightResult } from 'ngx-highlightjs';
 
 import { Link } from '../../components/link-list/link-list.component';
-import { listener } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'sg-link-list-topic',

@@ -1,0 +1,37 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <div class="placeholder-container">
+      <div class="p-container-1 placeholder"></div>
+      <div class="p-container-2 placeholder"></div>
+      <div class="p-container-3 placeholder"></div>
+    </div>
+  </div>
+
+  <div options>
+    <span class="compact">No options available for placeholders.</span>
+  </div>
+
+  <div code-sample>
+        <pre>
+            <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+        </pre>
+  </div>
+
+  <div usage>
+    <ul>
+      <li>
+        The placeholder class sets a background image showing a box with an X in it.
+      </li>
+      <li>
+        The background image stretches to the size of the containing element.
+      </li>
+      <li>
+        This example uses empty <code>&lt;div&gt;</code> elements, but you can use any element that
+        accepts background images.
+      </li>
+      <li>
+        In this case the <code>&lt;div&gt;</code> widths and heights are set with flexbox.
+      </li>
+    </ul>
+  </div>
+</sg-topic>

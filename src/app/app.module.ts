@@ -20,6 +20,7 @@ import { LinkListTopicComponent } from './topics/link-list-topic/link-list-topic
 import { MessageComponent } from './components/message/message.component';
 import { UserMessageTopicComponent } from './topics/user-message-topic/user-message-topic.component';
 import { CollapseTopicComponent } from './topics/collapse-topic/collapse-topic.component';
+import { PlaceholderTopicComponent } from './topics/placeholder-topic/placeholder-topic.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CollapseTopicComponent } from './topics/collapse-topic/collapse-topic.c
     LinkListTopicComponent,
     MessageComponent,
     UserMessageTopicComponent,
-    CollapseTopicComponent
+    CollapseTopicComponent,
+    PlaceholderTopicComponent
   ],
   imports: [
     BrowserModule,

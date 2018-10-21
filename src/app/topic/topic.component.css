@@ -30,12 +30,9 @@
     padding: 0.5rem 0.25rem 0.5rem 1rem;
 }
 
+
 .styleguide-topic .topic-options {
     background-color: lightgrey;
     padding: 0.5rem;
     margin: -1rem -1rem 1rem -1rem;
-}
-
-h4 {
-    margin-top: 0;
 }

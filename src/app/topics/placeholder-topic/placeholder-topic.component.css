@@ -1,0 +1,15 @@
+.placeholder-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.p-container-1, .p-container-3 {
+  flex: 0 1 20%;
+  height: 10rem;
+}
+
+.p-container-2 {
+  flex: 0 1 50%;
+  height: 5rem;
+}

@@ -56,6 +56,12 @@ export class StyleGuideService {
         footerColor: 'white'
       }
     },
+    'placeholder': {
+      id: 'placeholder',
+      title: 'Placeholders',
+      type: ['layout', 'convention'],
+      options: {}
+    },
     'text-styles': {
       id: 'text-styles',
       title: 'Text Styles',
