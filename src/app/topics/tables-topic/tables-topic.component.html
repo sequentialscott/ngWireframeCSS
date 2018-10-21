@@ -1,0 +1,74 @@
+<sg-topic [topicListing]="topicListing">
+  <div example>
+    <table [class.compact]="topicListing.options.compact">
+      <thead>
+      <tr>
+        <th
+          [ngClass]="{
+            'ascending': topicListing.options.sortAscending,
+            'descending': !topicListing.options.sortAscending,
+            'cursor-pointer': topicListing.options.showSort
+            }"
+          (click)="toggleSort()">Doctor</th>
+        <th>Ship</th>
+        <th>Actor</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>McCoy</td>
+        <td>USS Enterprise</td>
+        <td>DeForest Kelly</td>
+      </tr>
+      <tr>
+        <td>Franklin</td>
+        <td>Babylon 5</td>
+        <td>Richard Biggs</td>
+      </tr>
+      <tr>
+        <td>THE Doctor</td>
+        <td>TARDIS</td>
+        <td>William Hartnell</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div options>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.showSort" (ngModelChange)="updateCode()" /> Show sort
+      </label>
+    </span>
+    <span class="option-checkbox">
+      <label>
+        <input type="checkbox" [(ngModel)]="topicListing.options.compact" (ngModelChange)="updateCode()" /> Compact
+      </label>
+    </span>
+  </div>
+
+  <div code-sample>
+        <pre>
+            <code highlight [code]="code" (highlighted)="onHighlight($event)"></code>
+        </pre>
+  </div>
+
+  <div usage>
+    <ul>
+      <li>
+        Tables aren't for layout. We've had this discussion, right?
+      </li>
+      <li>
+        Click the sorting indicator to switch between ascending and descending.
+      </li>
+      <li>
+        This example uses empty <code>&lt;div&gt;</code> elements, but you can use any element that
+        accepts background images.
+      </li>
+      <li>
+        The sorting indicators just show a column and direction - set these classes if you need to do
+        actual sorting.
+      </li>
+    </ul>
+  </div>
+</sg-topic>

@@ -19,8 +19,7 @@ export class PlaceholderTopicComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   onHighlight(e) {
     this.highlightedCode = {
@@ -31,6 +30,4 @@ export class PlaceholderTopicComponent implements OnInit {
       value: '{...}'
     };
   }
-
-
 }

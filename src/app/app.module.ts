@@ -21,6 +21,7 @@ import { MessageComponent } from './components/message/message.component';
 import { UserMessageTopicComponent } from './topics/user-message-topic/user-message-topic.component';
 import { CollapseTopicComponent } from './topics/collapse-topic/collapse-topic.component';
 import { PlaceholderTopicComponent } from './topics/placeholder-topic/placeholder-topic.component';
+import { TablesTopicComponent } from './topics/tables-topic/tables-topic.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PlaceholderTopicComponent } from './topics/placeholder-topic/placeholde
     MessageComponent,
     UserMessageTopicComponent,
     CollapseTopicComponent,
-    PlaceholderTopicComponent
+    PlaceholderTopicComponent,
+    TablesTopicComponent
   ],
   imports: [
     BrowserModule,

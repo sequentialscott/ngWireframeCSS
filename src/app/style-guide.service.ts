@@ -62,6 +62,16 @@ export class StyleGuideService {
       type: ['layout', 'convention'],
       options: {}
     },
+    'tables': {
+      id: 'tables',
+      title: 'Tables',
+      type: ['widget', 'convention'],
+      options: {
+        compact: false,
+        showSort: true,
+        sortAscending: true
+      }
+    },
     'text-styles': {
       id: 'text-styles',
       title: 'Text Styles',
