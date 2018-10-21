@@ -2,7 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
+Go to the [Pattern Library](src/index.html).
+
 It's in active development.  Unless it's 2025 and I haven't updated it in a while.
+
 
 ## Development server
 
