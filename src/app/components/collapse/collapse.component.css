@@ -17,7 +17,7 @@
 }
 
 .wf-collapse.collapsed > .wf-collapse-header > .collapse-header-indicator {
-    background-image: url('/assets/wf-sprite.png');
+    background-image: url('../../../assets/wf-sprite.png');
     background-position: -200px center;
 }
 .wf-collapse.collapsed > .wf-collapse-header > .collapse-header-indicator.compact {
@@ -25,7 +25,7 @@
     background-size: 440px 20px;
 }
 .wf-collapse.expanded > .wf-collapse-header > .collapse-header-indicator {
-    background-image: url('/assets/wf-sprite.png');
+    background-image: url('../../../assets/wf-sprite.png');
     background-position: -640px center;
 }
 .wf-collapse.expanded > .wf-collapse-header > .collapse-header-indicator.compact {
